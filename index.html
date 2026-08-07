@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Yoii Jewelry — aksesori manis, modern, dan bisa custom.">
+  <title>Yoii Jewelry — Little Details, Big Sparkle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Yoii Jewelry">yoii<span>jewelry</span><b>✦</b></a>
+  <button class="menu-btn" aria-label="Buka menu">☰</button>
+  <nav class="nav">
+    <a href="#home" data-i18n="home">Home</a>
+    <a href="#collection" data-i18n="collection">Koleksi</a>
+    <a href="#promo" data-i18n="promo">Promo</a>
+    <a href="#custom" data-i18n="custom">Custom</a>
+    <a href="#about" data-i18n="about">About</a>
+  </nav>
+  <div class="actions">
+    <button id="searchBtn" aria-label="Cari">⌕</button>
+    <select id="lang" aria-label="Bahasa">
+      <option value="id">ID</option><option value="en">EN</option>
+    </select>
+    <button id="cartBtn" aria-label="Keranjang">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow" data-i18n="eyebrow">ACCESSORIES FOR YOUR EVERYDAY SPARKLE ✦</span>
+    <h1 data-i18n="heroTitle">Little details,<br><em>big sparkle.</em></h1>
+    <p data-i18n="heroText">Aksesori manis untuk bikin harimu lebih berwarna. Pilih koleksi favoritmu atau custom sesuai gayamu.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#collection" data-i18n="shopNow">Belanja Sekarang</a>
+      <a class="btn ghost" href="#custom" data-i18n="makeCustom">Buat Custom</a>
+    </div>
+    <div class="mini-points">
+      <span>♡ <b data-i18n="cute">Cute Design</b></span>
+      <span>✦ <b data-i18n="customizable">Bisa Custom</b></span>
+      <span>🎁 <b data-i18n="gift">Gift Ready</b></span>
+    </div>
+  </div>
+
+  <div class="slider" aria-label="Galeri produk">
+    <div class="slides">
+      <article class="slide active"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="Aksesori jewelry"></article>
+      <article class="slide"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=85" alt="Kalung"></article>
+      <article class="slide"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=85" alt="Cincin"></article>
+      <article class="slide"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85" alt="Anting"></article>
+      <article class="slide"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=85" alt="Aksesori"></article>
+    </div>
+    <button class="arrow prev" aria-label="Sebelumnya">‹</button>
+    <button class="arrow next" aria-label="Berikutnya">›</button>
+    <div class="dots"></div>
+    <span class="float-tag">NEW DROP ✦</span>
+  </div>
+</section>
+
+<section class="ticker">
+  <span>✦ FREE GIFT WRAP</span><span>♡ CUSTOM YOUR STYLE</span><span>✦ NEW ARRIVALS</span><span>♡ MADE WITH LOVE</span>
+</section>
+
+<section class="section" id="collection">
+  <div class="section-head">
+    <div><span class="eyebrow" data-i18n="discover">DISCOVER YOUR FAVORITES</span><h2 data-i18n="pick">Pick your sparkle ✦</h2></div>
+    <a href="#products" data-i18n="seeAll">Lihat Semua →</a>
+  </div>
+  <div class="categories">
+    <button data-filter="Bracelet"><span>〰</span><b>Bracelet</b></button>
+    <button data-filter="Necklace"><span>♢</span><b>Necklace</b></button>
+    <button data-filter="Ring"><span>◉</span><b>Ring</b></button>
+    <button data-filter="Earrings"><span>✦</span><b>Earrings</b></button>
+  </div>
+</section>
+
+<section class="section products-section" id="products">
+  <div class="section-head"><div><span class="eyebrow">LOVED BY YOU</span><h2 data-i18n="best">Best sellers</h2></div></div>
+  <div class="products" id="productGrid"></div>
+</section>
+
+<section class="promo section" id="promo">
+  <div><span class="eyebrow">YAY! SPECIAL DEAL</span><h2 data-i18n="promoTitle">More sparkle,<br>more happy.</h2><p data-i18n="promoText">Temukan promo pilihan dan hadiah manis untuk pesananmu.</p><a class="btn primary" href="#products" data-i18n="grab">Ambil Promonya</a></div>
+  <div class="promo-card"><span>THIS WEEK</span><strong>BUY 3<br><i>GET 1</i></strong><small>selected items</small></div>
+</section>
+
+<section class="custom section" id="custom">
+  <span class="eyebrow">MAKE IT YOURS</span>
+  <h2 data-i18n="customTitle">Your idea, your jewelry ♡</h2>
+  <p data-i18n="customText">Mau warna, nama, atau detail khusus? Ceritakan idemu dan kami bantu wujudkan.</p>
+  <a class="btn blue" id="customWa" href="#" target="_blank" rel="noopener" data-i18n="chatCustom">Chat untuk Custom</a>
+</section>
+
+<section class="about section" id="about">
+  <div><span class="eyebrow">HELLO, WE'RE YOII</span><h2 data-i18n="aboutTitle">Small accessories,<br>happy little moments.</h2></div>
+  <p data-i18n="aboutText">Yoii Jewelry hadir untuk menemani gaya sehari-hari lewat aksesori yang playful, minimal, dan mudah dipadukan. Karena detail kecil juga bisa bikin hari terasa spesial.</p>
+</section>
+</main>
+
+<footer>
+  <a class="brand" href="#home">yoii<span>jewelry</span><b>✦</b></a>
+  <p>© 2026 Yoii Jewelry. Made with ♡</p>
+  <div><a href="#collection">Collection</a><a href="#promo">Promo</a><a href="#about">About</a></div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><span>☎</span><b>Chat WA</b></a>
+
+<div class="overlay" id="searchOverlay">
+  <div class="modal">
+    <button class="close" data-close="searchOverlay">×</button>
+    <h3 data-i18n="searchTitle">Cari aksesori</h3>
+    <input id="searchInput" placeholder="Bracelet, ring, necklace...">
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</div>
+
+<aside class="cart" id="cartPanel">
+  <div class="cart-head"><h3 data-i18n="yourCart">Keranjangmu</h3><button class="close" id="closeCart">×</button></div>
+  <div id="cartItems"></div>
+  <div class="cart-foot"><strong>Total: <span id="cartTotal">Rp0</span></strong><button class="btn primary" id="checkoutBtn" data-i18n="checkout">Checkout via WhatsApp</button></div>
+</aside>
+<div class="shade" id="shade"></div>
+<script src="script.js"></script>
+</body>
+</html>
