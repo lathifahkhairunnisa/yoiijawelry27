@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Panduan — Yoii Jewelry</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .guide { max-width: 800px; margin: 40px auto; padding: 0 20px 60px; }
+    .guide h1 { font-family: "Playfair Display", serif; font-size: 36px; margin-bottom: 10px; }
+    .guide h2 { margin: 28px 0 10px; font-size: 22px; }
+    .guide p, .guide li { color: var(--muted); margin-bottom: 10px; }
+    .guide ul { padding-left: 20px; }
+    .card { background: #fff; border-radius: 16px; padding: 20px; margin: 16px 0; border: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">yoii<span>jewelry</span><b>✦</b></a>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="index.html#collection">Koleksi</a>
+    <a href="panduan.html">Panduan</a>
+  </nav>
+</header>
+
+<main class="guide">
+  <h1>Panduan Penggunaan</h1>
+  <p>Website ini terhubung ke Google Sheets sebagai database gratis. Berikut cara pakainya.</p>
+
+  <div class="card">
+    <h2>Untuk Pengunjung</h2>
+    <ul>
+      <li><strong>Lihat produk</strong> — Produk diambil otomatis dari database.</li>
+      <li><strong>Keranjang</strong> — Tambah produk, keranjang tersimpan di browser kamu.</li>
+      <li><strong>Checkout</strong> — Isi nama & nomor WA → pesanan tersimpan di database + terbuka WhatsApp.</li>
+      <li><strong>Custom Order</strong> — Isi form custom → request masuk ke database + terbuka WhatsApp.</li>
+      <li><strong>Search & Filter</strong> — Cari produk atau filter berdasarkan kategori.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Untuk Admin (Pemilik Toko)</h2>
+    <p>Klik tombol <strong>Admin</strong> di menu header, lalu masukkan password.</p>
+    <ul>
+      <li><strong>Produk</strong> — Tambah, edit, hapus produk (nama, harga, stok, gambar, kategori).</li>
+      <li><strong>Pesanan</strong> — Lihat semua order yang masuk, ubah status (NEW / PAID / SHIPPED / DONE), hapus.</li>
+      <li><strong>Custom</strong> — Lihat request custom dan ubah statusnya.</li>
+      <li><strong>Pengaturan</strong> — Ubah nomor WhatsApp yang digunakan untuk chat.</li>
+    </ul>
+    <p>Semua perubahan langsung tersimpan di Google Sheets.</p>
+  </div>
+
+  <div class="card">
+    <h2>Fitur Database yang Aktif</h2>
+    <ul>
+      <li>Katalog produk dinamis (bisa diubah tanpa edit kode)</li>
+      <li>Riwayat pesanan lengkap</li>
+      <li>Request custom tersimpan</li>
+      <li>Manajemen stok otomatis</li>
+      <li>Panel admin dengan fitur CRUD penuh</li>
+      <li>Password admin disimpan aman di Apps Script (bukan di website)</li>
+    </ul>
+  </div>
+
+  <p style="margin-top:30px"><a class="btn primary" href="index.html">Kembali ke Toko</a></p>
+</main>
+</body>
+</html>
