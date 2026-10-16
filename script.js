@@ -2,7 +2,7 @@
    Yoii Jewelry — Frontend
    Ganti APPS_SCRIPT_URL setelah deploy Google Apps Script
    ========================================================= */
-const APPS_SCRIPT_URL = ""; // <-- ISI SETELAH DEPLOY (lihat README)
+const https://script.google.com/macros/s/AKfycbwwH08fulxm1876pV9LCAV-hm_HzqvptRquooeF2Tp47QA6-a1FBMqV6E6sPai5Avrk/exec = ""; // <-- ISI SETELAH DEPLOY (lihat README)
 
 const FALLBACK_PRODUCTS = [
   {id:1,name:"Sunny Charm Bracelet",cat:"Bracelet",price:89000,badge:"BEST SELLER",img:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",stock:20},
