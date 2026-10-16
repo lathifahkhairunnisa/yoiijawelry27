@@ -3,7 +3,8 @@
    APPS_SCRIPT_URL diisi di sini setelah deploy.
    Password admin & nomor WA disimpan di Script Properties Apps Script.
    ========================================================= */
-const APPS_SCRIPT_URL = ""; // <-- ISI URL WEB APP APPS SCRIPT DI SINI
+const https://script.google.com/macros/s/AKfycbz8BJN4-yvum7qAGSHU7ruWVnAjnnVjShFD0BcdxyqYT8YQUOMef8GIrkUuEnzQkS3z/exec
+   = ""; // <-- ISI URL WEB APP APPS SCRIPT DI SINI
 
 const FALLBACK_PRODUCTS = [
   {id:1,name:"Sunny Charm Bracelet",cat:"Bracelet",price:89000,badge:"BEST SELLER",img:"https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80",stock:20},
